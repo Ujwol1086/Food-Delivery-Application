@@ -27,7 +27,7 @@ function Resturant()
                     <input type="text" className="border border-gray-300 rounded-full px-10 " placeholder="Search..." />
                     <span className="flex text-white px-4 py-2 cursor-pointer hover:text-slate-200" onClick={() =>
                     {
-                        navigate("/login");
+                        navigate("/auth/login");
                         <Loading />
                     }
                     }>

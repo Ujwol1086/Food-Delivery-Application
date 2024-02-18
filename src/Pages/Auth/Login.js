@@ -50,7 +50,7 @@ function Login()
                     <div className="mb-4">
                         Don't have an account? <span className="text-indigo-500 hover:text-indigo-600 cursor-pointer" onClick={() =>
                         {
-                            navigate('/create');
+                            navigate('/auth/create');
                         }}>Create one</span>
                     </div>
                     <div className="mb-4">
