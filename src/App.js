@@ -5,14 +5,14 @@ import Login from './Pages/Auth/Login';
 import Create from './Pages/Auth/Create';
 import Resturant from './Components/Resturant';
 import ContactUs from './Components/ContactUs';
-import MainLayout from './layout/MainLayout';
+// import MainLayout from './layout/MainLayout';
 
 function App()
 {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <MainLayout />,
+      // element: <MainLayout />,
       children: [
         {
           path: "/",
