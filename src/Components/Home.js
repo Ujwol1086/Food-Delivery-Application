@@ -8,7 +8,7 @@ function Home()
     return (
         <>
             <Navbar />
-            {/* <div className="bg-gray-100">
+            <div className="bg-gray-100">
                 <section id="home" className="relative">
                     <img src={require('../Images/food2.jpg')} alt='' className='w-1/2 h-full object-cover' />
                     <div className='container mx-auto absolute inset-0 flex flex-col justify-center items-center'>
@@ -33,7 +33,7 @@ function Home()
                         <p>&copy; 2024 Food Delivery</p>
                     </div>
                 </footer>
-            </div> */}
+            </div>
         </>
     );
 }

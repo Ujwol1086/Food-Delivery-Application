@@ -44,8 +44,8 @@ function Navbar()
                             <li><Link to="/resturant" className="text-white hover:text-gray-300">Restaurants</Link></li>
                             <li><Link to="/contact" className="text-white hover:text-gray-300">Contact</Link></li>
                             <li><Link to="/about" className="text-white hover:text-gray-300">About</Link></li>
-                            <li className='flex gap-5'><input type='text' placeholder='Search' className="text-white bg-white rounded-full px-5 hover:text-gray-500 hover:outline-none" /><button className='text-white hover:bg-gray-700 rounded-full px-3 py-1'>Search</button></li>
-                            <li><Link to="/auth/login" className="text-white hover:text-gray-300">Login</Link></li>
+                            <li className='flex gap-5 py-1'><input type='text' placeholder='Search' className="text-white bg-white rounded-full px-5 hover:text-gray-500 hover:outline-none" /><button className='text-white hover:bg-gray-700 rounded-full px-3 py-1'>Search</button> <button className='text-white hover:bg-gray-700 rounded-full px-3 py-1'>Login</button></li>
+                            {/* <li><Link to="/auth/login" className="text-white hover:text-gray-300">Login</Link></li> */}
                         </ul>
                     </div>
                 )}
