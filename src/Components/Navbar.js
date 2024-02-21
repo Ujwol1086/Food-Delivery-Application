@@ -17,9 +17,15 @@ function Navbar()
                     <div className="hidden md:flex items-center">
                         <ul className="flex space-x-6">
                             <li><Link to="/" className="text-white hover:text-gray-300">Home</Link></li>
-                            <li><Link to="/restaurants" className="text-white hover:text-gray-300">Restaurants</Link></li>
+                            <li><Link to="/resturant" className="text-white hover:text-gray-300">Resturants</Link></li>
                             <li><Link to="/contact" className="text-white hover:text-gray-300">Contact</Link></li>
                             <li><Link to="/about" className="text-white hover:text-gray-300">About</Link></li>
+                        </ul>
+                    </div>
+                    <div className='hidden md:flex items-center'>
+                        <ul className='flex gap-10'>
+                            <li><input type='text' placeholder='Search' className="text-white bg-white rounded-full px-5 hover:text-gray-500 hover:outline-none" /></li>
+                            <li><Link to="/auth/login" className="text-white hover:text-gray-300">Login</Link></li>
                         </ul>
                     </div>
                     <div className="md:hidden flex items-center">
@@ -29,14 +35,17 @@ function Navbar()
                             </svg>
                         </button>
                     </div>
+
                 </div>
                 {isOpen && (
                     <div className="md:hidden">
                         <ul className="flex flex-col space-y-4">
                             <li><Link to="/" className="text-white hover:text-gray-300">Home</Link></li>
-                            <li><Link to="/restaurants" className="text-white hover:text-gray-300">Restaurants</Link></li>
+                            <li><Link to="/resturant" className="text-white hover:text-gray-300">Restaurants</Link></li>
                             <li><Link to="/contact" className="text-white hover:text-gray-300">Contact</Link></li>
                             <li><Link to="/about" className="text-white hover:text-gray-300">About</Link></li>
+                            <li className='flex gap-5'><input type='text' placeholder='Search' className="text-white bg-white rounded-full px-5 hover:text-gray-500 hover:outline-none" /><button className='text-white hover:bg-gray-700 rounded-full px-3 py-1'>Search</button></li>
+                            <li><Link to="/auth/login" className="text-white hover:text-gray-300">Login</Link></li>
                         </ul>
                     </div>
                 )}
