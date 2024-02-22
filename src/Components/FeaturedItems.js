@@ -1,6 +1,6 @@
 import React from 'react'
 
-function FeaturedResturant()
+function FeaturedItems()
 {
     return (
         <div>
@@ -35,4 +35,4 @@ function FeaturedResturant()
     )
 }
 
-export default FeaturedResturant
+export default FeaturedItems
