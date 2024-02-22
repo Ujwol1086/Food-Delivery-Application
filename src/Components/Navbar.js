@@ -18,11 +18,11 @@ function Navbar()
                         <ul className="flex space-x-6">
                             <li><Link to="/" className="text-white hover:text-gray-300">Home</Link></li>
                             <li><Link to="/resturant" className="text-white hover:text-gray-300">Resturants</Link></li>
-                            <li><Link to="/contact" className="text-white hover:text-gray-300">Contact</Link></li>
+                            <li><Link to="/contact-us" className="text-white hover:text-gray-300">Contact</Link></li>
                             <li><Link to="/about" className="text-white hover:text-gray-300">About</Link></li>
                         </ul>
                     </div>
-                    <div className='hidden md:flex items-center'>
+                    <div className='sm:hidden md:flex items-center'>
                         <ul className='flex gap-10'>
                             <li><input type='text' placeholder='Search' className="text-white bg-white rounded-full px-5 py-1 hover:text-gray-500 hover:outline-none" /></li>
                             <li><Link to="/auth/login" className="text-white hover:text-gray-300">Login</Link></li>
@@ -38,18 +38,12 @@ function Navbar()
 
                 </div>
                 {isOpen && (
-                    <div className='md:hidden'>
-                        <div className=" sm:hidden md:hidden">
-                            {/* <Link to="/auth/login" className="text-white hover:text-gray-300">Login</Link> */}
-                            <ul className="flex flex-col space-y-4">
-                                <li><Link to="/" className="text-white hover:text-gray-300">Home</Link></li>
-                                <li><Link to="/resturant" className="text-white hover:text-gray-300">Restaurants</Link></li>
-                                <li><Link to="/contact" className="text-white hover:text-gray-300">Contact</Link></li>
-                                <li><Link to="/about" className="text-white hover:text-gray-300">About</Link></li>
-                            </ul>
-                        </div>
-                        <ul className='flex gap-10'>
-                            <li><input type='text' placeholder='Search' className="text-white bg-white rounded-full px-5 py-1 hover:text-gray-500 hover:outline-none" /></li>
+                    <div className=" md:hidden">
+                        <ul className="flex flex-col space-y-4">
+                            <li><Link to="/" className="text-white hover:text-gray-300">Home</Link></li>
+                            <li><Link to="/resturant" className="text-white hover:text-gray-300">Restaurants</Link></li>
+                            <li><Link to="/contact-us" className="text-white hover:text-gray-300">Contact</Link></li>
+                            <li><Link to="/about" className="text-white hover:text-gray-300">About</Link></li>
                             <li><Link to="/auth/login" className="text-white hover:text-gray-300">Login</Link></li>
                         </ul>
                     </div>
