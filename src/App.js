@@ -5,6 +5,7 @@ import Login from './Pages/Auth/Login';
 import Create from './Pages/Auth/Create';
 import Resturant from './Components/Resturant';
 import ContactUs from './Components/ContactUs';
+import About from './Components/About';
 // import MainLayout from './layout/MainLayout';
 
 function App()
@@ -25,6 +26,10 @@ function App()
         {
           path: "/contact-us",
           element: <ContactUs />
+        },
+        {
+          path: "/about",
+          element: <About />
         }
       ]
     },

@@ -7,8 +7,8 @@ function Create()
     const navigate = useNavigate();
     return (
         <>
-            <Navbar />
             <div>
+                <Navbar />
                 <img src={'https://st3.depositphotos.com/7893620/16690/i/450/depositphotos_166903868-stock-photo-food-background-vegetarian-concept.jpg'} alt='' className='relative w-full h-[41.3rem] object-cover' />
                 <div className='absolute mx-auto my-7 p-1 h-auto bg-slate-300 top-16 right-[33%]'>
                     <div className='mx-auto my-7 w-[30rem]'>

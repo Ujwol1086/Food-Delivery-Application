@@ -41,3 +41,12 @@
 .menu-item p {
     font-size: 1rem; /* Adjusting font size for description */
 }
+.container {
+  /* Add your desired styles here */
+  /* For example: */
+  max-width: 1200px; /* Set the maximum width of the container */
+  margin-left: auto; /* Center the container horizontally */
+  margin-right: auto;
+  padding-left: 20px; /* Add some padding on the left and right */
+  padding-right: 20px;
+}

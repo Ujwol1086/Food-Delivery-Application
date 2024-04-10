@@ -19,7 +19,7 @@ function FeaturedItems()
                             <p className="mb-4">Description of the item goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>
                         <div className="menu-item cursor-pointer">
-                            <img src={require("../Images/rest2.jpg")} alt="Menu Item 2" className="mx-auto mb-4 hover:scale-110 transition duration-300" />
+                            <img src={require("../Images/rest.jpg")} alt="Menu Item 2" className="mx-auto mb-4 hover:scale-110 transition duration-300" />
                             <h3 className="text-xl font-semibold mb-2">Item Name</h3>
                             <p className="mb-4">Description of the item goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </div>

@@ -1,4 +1,6 @@
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faX } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
@@ -9,7 +11,7 @@ function Navbar()
     const navigate = useNavigate();
 
     return (
-        <nav className="bg-gray-800">
+        <nav className="bg-gray-800 fixed top-0 w-full">
             <div className="container mx-auto px-4">
                 <div className="flex justify-between items-center py-4">
                     <div className='sm:flex md:hidden'>
@@ -38,21 +40,21 @@ function Navbar()
                     </div>
                     <div className="md:hidden flex items-center">
                         <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none">
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            {/* <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                            </svg>
+                            </svg> */}
+                            <FontAwesomeIcon icon={isOpen ? faX : faBars} className="text-xl text-white right-auto p-1.5" />
                         </button>
                     </div>
 
                 </div>
                 {isOpen && (
-                    <div className="md:hidden flex justify-between">
+                    <div className="md:hidden flex justify-between mb-5">
                         <ul className="flex flex-col space-y-4">
                             <li><Link to="/" className="text-white hover:text-gray-300">Home</Link></li>
                             <li><Link to="/restaurant" className="text-white hover:text-gray-300">Restaurants</Link></li>
                             <li><Link to="/contact-us" className="text-white hover:text-gray-300">Contact</Link></li>
                             <li><Link to="/about" className="text-white hover:text-gray-300">About</Link></li>
-
                         </ul>
                         <div className='space-y-4'>
                             <ul>
