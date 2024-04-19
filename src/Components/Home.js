@@ -1,15 +1,18 @@
 import React from 'react';
 import Navbar from './Navbar';
 import FeaturedItems from './FeaturedItems';
-import About from './About';
+import Footer from './Footer';
+import { FaSearchLocation } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaMugHot } from "react-icons/fa";
 function Home()
 {
     return (
         <>
             <Navbar />
             <div className="bg-gray-100">
-                <section id="home" className="h-[30rem] flex flex-col text-center pt-10 bg-gradient-to-t from-green-600 to-red-600">
-                    <img src='src/Images/background.jpg' alt='' className='w-full h-full object-cover' />
+                <section id="home" className="h-[25rem] flex flex-col text-center pt-10 bg-gradient-to-t from-green-600 to-red-600">
                     <div className="container mx-auto px-2 lg:px-0 lg:w-1/2 flex justify-center items-center">
                         <div className="font-medium">
                             <p className="text-xl sm:text-xl text-green-400 font-bold mb-2">ONLINE FOOD DELIVERY</p>
@@ -21,17 +24,31 @@ function Home()
                         </div>
                     </div>
                 </section>
-                <section id="about" className="py-10 md:py-20">
-                    <About />
+                <section className='p-5'>
+                    <h1 className='text-center text-3xl pb-10'>GRAB YOUR DEALS NOW!</h1>
+                    <div className='flex'>
+                        <div className="text-center max-w-64 m-auto">
+                            <FaArrowDown size={50} className="mx-auto mb-4 " />
+                            <h3 className="text-xl font-semibold mb-2">Install App or use the Website</h3>
+                        </div>
+                        <div className="text-center max-w-64 m-auto">
+                            <FaSearchLocation size={50} className="mx-auto mb-4" />
+                            <h3 className="text-xl font-semibold mb-2">Search for resturants or items</h3>
+                        </div>
+                        <div className="text-center max-w-64 m-auto">
+                            <FaMugHot size={50} className="mx-auto mb-4 rounded-full" />
+                            <h3 className="text-xl font-semibold mb-2">Place Order</h3>
+                        </div>
+                        <div className="text-center max-w-64 m-auto">
+                            <FaMapMarkerAlt size={50} className="mx-auto mb-4" />
+                            <h3 className="text-xl font-semibold mb-2">Track Your Order</h3>
+                        </div>
+                    </div>
                 </section>
                 <section id="menu" className="py-10 md:py-20 bg-gray-200 text-center">
                     <FeaturedItems />
                 </section>
-                <footer className="bg-gray-800 text-white py-4 text-center">
-                    <div className="container mx-auto">
-                        <p>&copy; 2024 Food Delivery</p>
-                    </div>
-                </footer>
+                <Footer />
             </div>
         </>
     );

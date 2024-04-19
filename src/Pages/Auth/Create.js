@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import Navbar from '../../Components/Navbar';
+import Footer from '../../Components/Footer';
 
 function Create()
 {
@@ -53,6 +54,7 @@ function Create()
                     </div>
                 </div >
             </div >
+            <Footer />
         </>
     )
 }

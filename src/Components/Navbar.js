@@ -11,7 +11,7 @@ function Navbar()
     const navigate = useNavigate();
 
     return (
-        <nav className="bg-gray-800 fixed top-0 w-full">
+        <nav className="bg-gray-800">
             <div className="container mx-auto px-4">
                 <div className="flex justify-between items-center py-4">
                     <div className='sm:flex md:hidden'>

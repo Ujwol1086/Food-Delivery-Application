@@ -1,16 +1,24 @@
 import React from 'react'
 import Navbar from './Navbar'
+import Footer from './Footer'
 
 function About()
 {
     return (
-        <div>
+        <>
             <Navbar />
-            <div className="container mx-auto text-center p-10 mt-10">
-                <h2 className="text-3xl font-bold mb-4">About Us</h2>
-                <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vitae ultricies lacinia, nunc nisl aliquet nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nisl vitae ultricies lacinia, nunc nisl aliquet nisl, eget aliquam nisl nisl sit amet nisl.</p>
+            <div>
+                <section className='w-full h-48 text-centre pt-20'>
+                    <h1 className='text-6xl px-40 py-10 text-gray-500 underline'>About Us</h1>
+                </section>
+                <section className='w-full h-40 p-5 text-center'>
+                    <p>
+                        lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </section>
             </div>
-        </div>
+            <Footer />
+        </>
     )
 }
 
