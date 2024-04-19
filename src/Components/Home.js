@@ -25,21 +25,21 @@ function Home()
                     </div>
                 </section>
                 <section className='p-5'>
-                    <h1 className='text-center text-3xl pb-10'>GRAB YOUR DEALS NOW!</h1>
-                    <div className='flex'>
-                        <div className="text-center max-w-64 m-auto">
+                    <h1 className='text-center text-orange-500 text-3xl pb-10'><b>GRAB YOUR DEALS NOW!</b></h1>
+                    <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
+                        <div className="text-center text-green-500 max-w-64 m-auto">
                             <FaArrowDown size={50} className="mx-auto mb-4 " />
                             <h3 className="text-xl font-semibold mb-2">Install App or use the Website</h3>
                         </div>
-                        <div className="text-center max-w-64 m-auto">
+                        <div className="text-center text-green-500 max-w-64 m-auto">
                             <FaSearchLocation size={50} className="mx-auto mb-4" />
                             <h3 className="text-xl font-semibold mb-2">Search for resturants or items</h3>
                         </div>
-                        <div className="text-center max-w-64 m-auto">
+                        <div className="text-center text-green-500 max-w-64 m-auto">
                             <FaMugHot size={50} className="mx-auto mb-4 rounded-full" />
                             <h3 className="text-xl font-semibold mb-2">Place Order</h3>
                         </div>
-                        <div className="text-center max-w-64 m-auto">
+                        <div className="text-center text-green-500 max-w-64 m-auto">
                             <FaMapMarkerAlt size={50} className="mx-auto mb-4" />
                             <h3 className="text-xl font-semibold mb-2">Track Your Order</h3>
                         </div>

@@ -58,5 +58,5 @@
   @apply cursor-pointer hover:text-orange-500 ease-in-out duration-150;
 }
 .footer-mouseover-social {
-  @apply footer-mouseover flex gap-2;
+  @apply footer-mouseover flex gap-1;
 }
