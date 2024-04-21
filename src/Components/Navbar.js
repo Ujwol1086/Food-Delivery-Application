@@ -49,10 +49,10 @@ function Navbar()
 
                 </div>
                 {isOpen && (
-                    <div className="md:hidden flex justify-between mb-5">
+                    <div className="md:hidden flex justify-between">
                         <ul className="flex flex-col space-y-4">
                             <li><Link to="/" className="text-white hover:text-gray-300">Home</Link></li>
-                            <li><Link to="/restaurant" className="text-white hover:text-gray-300">Restaurants</Link></li>
+                            <li><Link to="/resturant" className="text-white hover:text-gray-300">Resturants</Link></li>
                             <li><Link to="/contact-us" className="text-white hover:text-gray-300">Contact</Link></li>
                             <li><Link to="/about" className="text-white hover:text-gray-300">About</Link></li>
                         </ul>

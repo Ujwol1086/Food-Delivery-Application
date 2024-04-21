@@ -8,10 +8,10 @@ function ContactUs()
         <>
             <Navbar />
             <div className='bg-gray-100'>
-                <section id="contact" className="p-[1.65rem] bg-green-400 text-white">
+                <section id="contact" className="p-[1.65rem] bg-orange-300 text-white">
                     <div className="mx-auto text-center">
-                        <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
-                        <p className="text-lg mb-8">Have a question or feedback? Feel free to get in touch!</p>
+                        <h2 className="text-3xl font-bold mb-4 text-black">Contact Us</h2>
+                        <p className="text-lg mb-8 text-black">Have a question or feedback? Feel free to get in touch!</p>
                         <form className="max-w-md mx-auto text-gray-700">
                             <input type="text" placeholder="Your Name" className="input" />
                             <input type="email" placeholder="Your Email" className="input" />

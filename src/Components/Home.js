@@ -6,6 +6,7 @@ import { FaSearchLocation } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaMugHot } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 function Home()
 {
     return (
@@ -20,7 +21,7 @@ function Home()
                             <h1 className="text-4xl sm:text-4xl lg:text-6xl font-bold text-yellow-300 mb-8">Just Order</h1>
                             <h2 className="text-lg sm:text-lg lg:text-2xl font-bold mb-4 text-lime-500">Delicious food delivered to your doorstep</h2>
                             <p className="text-sm sm:text-base lg:text-lg text-lime-500 mb-8">Order online and enjoy a wide variety of cuisines from the comfort of your home.</p>
-                            <a href="#menu" className="bg-orange-500 text-white px-6 py-3 rounded-full font-bold hover:bg-orange-600 text-sm sm:text-base lg:text-lg">Order Now &rarr;</a>
+                            <a href="#menu" className="bg-orange-500 text-white px-6 py-3 rounded-full font-bold hover:bg-orange-600 text-sm sm:text-base lg:text-lg"><Link to="/resturant">Order Now &rarr;</Link></a>
                         </div>
                     </div>
                 </section>
