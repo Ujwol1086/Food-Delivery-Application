@@ -6,6 +6,7 @@ import Footer from '../../Components/Footer';
 function Login()
 {
     const navigate = useNavigate();
+
     return (
         <>
             <Navbar />
